@@ -1,0 +1,46 @@
+{
+  "name": "pqs-cli",
+  "version": "0.1.0",
+  "description": "PQS CLI — score, optimize, and gate prompts from your terminal and CI.",
+  "type": "module",
+  "bin": {
+    "pqs": "./bin/pqs.js"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "LICENSE",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": [
+    "pqs",
+    "prompt",
+    "prompt-quality",
+    "llm",
+    "ci",
+    "cli",
+    "ai"
+  ],
+  "author": "Ken Burbary",
+  "license": "MIT",
+  "homepage": "https://pqs.onchainintel.net",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OnChainAIIntel/pqs-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/OnChainAIIntel/pqs-cli/issues"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "conf": "^13.0.1",
+    "ora": "^8.1.0"
+  }
+}
