@@ -6,4 +6,4 @@ const pkgPath = join(dirname(fileURLToPath(import.meta.url)), "..", "package.jso
 const pkg = JSON.parse(readFileSync(pkgPath, "utf8"));
 
 export const VERSION = pkg.version;
-export const USER_AGENT = `pqs-cli/${VERSION}`;
+export const USER_AGENT = `pqs-quality/${VERSION}`;

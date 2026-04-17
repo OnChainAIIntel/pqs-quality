@@ -1,11 +1,11 @@
-# pqs-cli
+# pqs-quality
 
 Score, optimize, and gate prompts from your terminal and CI.
 
 ## Quick start
 
 ```bash
-npm install -g pqs-cli
+npm install -g pqs-quality
 ```
 
 ```bash
@@ -33,7 +33,7 @@ Requires Node 18+.
 **A Quality Gate For Prompts.**
 Before they break production. Paste yours below and see.
 
-Where the web app lets you paste one prompt and watch it score, `pqs-cli` brings the same 8-dimension scorecard to your terminal and your pull requests. Use `pqs score` for a quick grade, `pqs optimize` to get the rewritten version, and `pqs check` as a GitHub Actions gate that fails the build when a prompt drops below your threshold.
+Where the web app lets you paste one prompt and watch it score, the CLI brings the same 8-dimension scorecard to your terminal and your pull requests. Use `pqs score` for a quick grade, `pqs optimize` to get the rewritten version, and `pqs check` as a GitHub Actions gate that fails the build when a prompt drops below your threshold.
 
 ## Commands
 
@@ -152,7 +152,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
-      - run: npm install -g pqs-cli
+      - run: npm install -g pqs-quality
       - name: Run pqs check
         env:
           PQS_API_KEY: ${{ secrets.PQS_API_KEY }}
@@ -185,8 +185,8 @@ After `pqs login`, your key lives at `~/.pqs/config.json`. Delete the file to lo
 ## Development
 
 ```bash
-git clone https://github.com/OnChainAIIntel/pqs-cli
-cd pqs-cli
+git clone https://github.com/OnChainAIIntel/pqs-quality
+cd pqs-quality
 npm install
 PQS_API_KEY=pqs_live_... npm test   # runs 6 smoke tests
 ```

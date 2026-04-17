@@ -1,7 +1,7 @@
 {
-  "name": "pqs-cli",
+  "name": "pqs-quality",
   "version": "0.1.0",
-  "description": "PQS CLI — score, optimize, and gate prompts from your terminal and CI.",
+  "description": "A quality gate for prompts. Score, optimize, and gate AI prompts from your terminal and CI.",
   "type": "module",
   "bin": {
     "pqs": "./bin/pqs.js"
@@ -32,10 +32,10 @@
   "homepage": "https://pqs.onchainintel.net",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/OnChainAIIntel/pqs-cli.git"
+    "url": "git+https://github.com/OnChainAIIntel/pqs-quality.git"
   },
   "bugs": {
-    "url": "https://github.com/OnChainAIIntel/pqs-cli/issues"
+    "url": "https://github.com/OnChainAIIntel/pqs-quality/issues"
   },
   "dependencies": {
     "chalk": "^5.3.0",
