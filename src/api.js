@@ -33,7 +33,7 @@ export class NetworkError extends ApiError {
 
 export async function request(
   path,
-  { method = "POST", body, apiKey, signal, timeoutMs = 60_000 } = {}
+  { method = "POST", body, apiKey, signal, timeoutMs = 120_000 } = {}
 ) {
   const url = `${getApiBase()}${path}`;
   const key = apiKey ?? getApiKey();

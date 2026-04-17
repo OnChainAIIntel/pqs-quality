@@ -12,7 +12,7 @@ const CLI = join(__dirname, "..", "bin", "pqs.js");
 // Spawn the CLI in a fully controlled env. Tests that need to prove "no key
 // on disk" pass a throwaway HOME so the `conf` store can't find the caller's
 // real ~/.pqs/config.json.
-function run(args, { env = {}, input = null, timeoutMs = 60_000 } = {}) {
+function run(args, { env = {}, input = null, timeoutMs = 120_000 } = {}) {
   return new Promise((resolve, reject) => {
     const child = spawn("node", [CLI, ...args], {
       env: { ...process.env, ...env },

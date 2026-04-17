@@ -1,6 +1,6 @@
 {
   "name": "pqs-quality",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A quality gate for prompts. Score, optimize, and gate AI prompts from your terminal and CI.",
   "type": "module",
   "bin": {
